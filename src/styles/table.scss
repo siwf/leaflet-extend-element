@@ -1,0 +1,132 @@
+ // 地图table
+.map-table {
+  border-radius: 4px 4px 0px 0px;
+  width: 370px;
+  // height: 410px;
+  background-color: #ffffff;
+}
+.map-table--top {
+  position: relative;
+  font-size: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 18px;
+    background: linear-gradient(274deg, #00b6ff 0%, #0084ff 100%);
+    border-radius: 2px;
+    left: 10px;
+  }
+}
+.top-left {
+  font-weight: bold;
+}
+.top-right {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: bold;
+}
+.map-table--top,
+.map-table--total {
+  padding: 0px 10px 0 25px;
+  height: 36px;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.map-table--total {
+  font-size: 14px;
+}
+.total--title {
+  margin-left: 14px;
+}
+.total-num {
+  color: #1890ff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.top-total {
+  margin-left: auto;
+}
+.map-table--base {
+  // padding: 0 10px;
+  margin: 0 10px 10px 10px;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #e1e6ee;
+  display: flex;
+}
+.map-table-wrapper {
+  margin: 0 10px;
+  height: 340px;
+  overflow-y: auto;
+}
+.base-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.item-top,
+.item-bottom {
+  // width: 25%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #e0f0fb;
+  text-align: center;
+}
+.item-bottom {
+  font-size: 12px;
+  background-color: #ffffff;
+  font-weight: normal;
+}
+
+// 国控省控
+.control-level-sheng, .control-level-guo {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #0FE3DB;
+  margin: 0 auto;
+}
+.control-level-guo {
+  background-color: #1B4CFF;
+}
+
+.m-right .el-table .cell {
+  padding: 0 4px;
+}
+
+.water-type-1 {
+  background-color: #82d3f8;
+}
+.water-type-2 {
+  background-color: #00a7f0;
+}
+.water-type-3 {
+  background-color: #6fb602;
+}
+.water-type-4 {
+  background-color: #ffff00;
+}
+.water-type-5 {
+  background-color: #f59b23;
+}
+.water-type-6 {
+  background-color: #d9021b;
+}
+.water-type-1,
+.water-type-2,
+.water-type-3,
+.water-type-4,
+.water-type-5,
+.water-type-6 {
+  color: #333333;
+  border-radius: 4px;
+}

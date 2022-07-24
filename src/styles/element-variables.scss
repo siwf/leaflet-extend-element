@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* icon font path, required */
+$--font-path: "~element-ui/lib/theme-chalk/fonts";
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+// radio
+
+
+.el-radio__input.is-checked + .el-radio__label {
+  color: #333333;
+}
+.el-radio__inner::after {
+  width: 8px;
+  height: 8px;
+  background: #1890FF;
+}
+.el-radio__input.is-checked .el-radio__inner {
+  height: 14px;
+  width: 14px;
+  background: rgba(24, 144, 255, 0.4);
+}
+
+.el-radio__label {
+  font-weight: 400;
+}
+.row-title .el-radio-group {
+  padding-left: 20px;
+}
+// checkbox
+
+.el-checkbox__input.is-checked + .el-checkbox__label {
+  color: #333333;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner {
+  border-color: #1890FF;
+  background-color: #1890FF;
+}
+
+
+body .el-table th.gutter
+{
+  display: table-cell!important;
+}
+.el-table td.is-center,
+.el-table--border th, .el-table--border td {
+  // border-right: 1px solid #ffffff;
+  border-color: #D9D9D9;
+}
+.el-table::before {
+  height: 0;
+}
+.el-table__header-wrapper {
+  border-radius: 4px 4px 0 0;
+}
+th {
+  background-color: #DCEEFF !important;
+}
+// thead tr {
+//   background-color: #e0f0fb !important;
+// }
+.el-table th > .cell {
+  color: #333333;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.el-tag.el-tag--info {
+  background: rgba(24, 144, 255, 0.15);
+  color: #333333;
+}
+
+.h-40 {
+  height: 40px;
+  line-height: 40px;
+}
+
+.row-title {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 14px;
+    background: linear-gradient(274deg, #00b6ff 0%, #0084ff 100%);
+    border-radius: 2px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.justify-center {
+  justify-content: center;
+}
+.t-a-center {
+  text-align: center;
+}
+.mr-b-10 {
+  margin-bottom: 10px;
+}
+.mr-r-40 {
+  margin-right: 30px;
+}
+
+// 全局样式
+// 表单组件
+.ya-form {
+  height: 46px;
+  float: left;
+  line-height: 46px;
+  margin-right: 20px;
+}
+
+.ya-row {
+  padding: 0px 10px;
+  font-size: 14px;
+  color: #333333;
+}
+.ya-row--title {
+  margin-right: 10px;
+  display: inline-block;
+  font-size: 14px;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// tap切换
+
+.ya-tap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+p {
+  cursor: pointer;
+  color: #333333;
+}
+.tap-left,
+.tap-right {
+  min-width: 96px;
+  height: 28px;
+  padding: 0 4px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 28px;
+}
+.active {
+  background: #1890ff;
+  color: #ffffff;
+}
+.tap-line {
+  margin: 0 10px;
+  height: 28px;
+  width: 1px;
+  background-color: #D9D9D9;
+}
+
+.desc-left {
+  width: 60px;
+}
+.chart-desc {
+  margin-top: 10px;
+  font-size: 12px;
+  display: flex;
+  padding: 4px;
+  background: #FFFAED;
+  border-radius: 4px;
+  line-height: 24px;
+}
